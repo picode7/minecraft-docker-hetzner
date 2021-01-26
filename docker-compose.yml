@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  bds: #Bedrock Dedicated Server
+    image: itzg/minecraft-bedrock-server
+    environment:
+      EULA: "TRUE"
+      GAMEMODE: survival
+      DIFFICULTY: normal
+    restart: unless-stopped
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - bds:/data
+    stdin_open: true
+    tty: true
+
+volumes:
+  bds: {}
