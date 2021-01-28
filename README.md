@@ -14,6 +14,8 @@
   - `sudo apt-get instal docker-compose`
   - `sudo apt-get instal docker.io`
 
+- Make sure docker starts on boot
+  - `sudo systemctl enable docker`
 - Install Minecraft Bedrock Server (<https://hub.docker.com/r/itzg/minecraft-bedrock-server>)
   - `docker compose up -d` using `docker-compose.yml` or just the commands for docker below.
 - Connect to server-IP in Minecraft (Bedrock)
